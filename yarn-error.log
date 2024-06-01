@@ -1,5 +1,5 @@
 Arguments: 
-  /opt/homebrew/Cellar/node@16/16.13.1/libexec/node /Users/jeskson/.yarn/bin/yarn.js install
+  /opt/homebrew/Cellar/node@16/16.13.1/libexec/node /Users/jeskson/.yarn/bin/yarn.js
 
 PATH: 
   /opt/homebrew/opt/python@3.10/bin:/opt/homebrew/Cellar/node@16/16.13.1/bin:/opt/homebrew/opt/node@16/bin:/Users/jeskson/.docker/bin:/Users/jeskson/Downloads/flutter/bin:/Users/jeskson/.docker/bin:/Users/jeskson/.yarn/bin:/Users/jeskson/.config/yarn/global/node_modules/.bin:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/Apple/usr/bin:/Users/jeskson/npm-global/bin:/path/to/maven/bin:/tools:/platform-tools:/usr/local/mysql/bin:/Users/jeskson/Downloads/flutter/bin:/Users/jeskson/Library/Android/sdk/tools:/Users/jeskson/Library/Android/sdk/platform-tools

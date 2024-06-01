@@ -5,32 +5,32 @@ set -e
 
 # 打包生成静态文件
 yarn docs:build
-printf "打包成功\n"
+echo "打包成功"
 
 # 进入打包好的文件夹
 cd docs/.vitepress/dist
 
 # 写入域名（如果需要）
-# cat > CNAME << EOF
-# 1024bibi.com
-# EOF
+# echo "1024bibi.com" > CNAME
 
-# 静态页面上传
-# 创建git的本地仓库，提交修改
+# 初始化git仓库
 git init
-# 检查dist分支是否存在
+
+# 切换到dist分支，如果不存在则创建
 if git show-ref --verify --quiet refs/heads/dist; then
   git checkout dist
 else
   git checkout -b dist
 fi
 
+# 添加所有文件并提交
 git add -A
 git commit -m 'deploy'
-printf "本地提交成功\n"
+echo "本地提交成功"
 
-# 覆盖式地将本地仓库发布至github，因为发布不需要保留历史记录
+# 覆盖式地将本地仓库发布至github
 # 格式为：git push -f git@github.com:'用户名'/'仓库名'.git dist:gh-pages
-git push -f git@github.com:webVueBlog/vitepress-java.git dist:gh-pages
+git remote add origin https://github.com/webVueBlog/vitepress-java.git
+git push -f origin dist:dist
 
-printf "dist目录上传成功\n"
+echo "dist目录上传成功"
