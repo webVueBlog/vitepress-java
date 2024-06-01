@@ -18,11 +18,14 @@ jobs:
         with:
           node-version: '14'
 
+      - name: Install cnpm
+        run: npm install -g cnpm --registry=https://registry.npm.taobao.org
+
       - name: Install dependencies
-        run: yarn install
+        run: cnpm install
 
       - name: Build static files
-        run: yarn docs:build
+        run: cnpm run docs:build
 
       - name: Deploy to GitHub Pages
         run: |
