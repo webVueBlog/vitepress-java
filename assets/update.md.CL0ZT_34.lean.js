@@ -1,1 +1,0 @@
-import{_ as s,c as a,o as i,a8 as e}from"./chunks/framework.-QgC0Gv2.js";const b=JSON.parse('{"title":"更新及卸载","description":"","frontmatter":{},"headers":[],"relativePath":"update.md","filePath":"update.md"}'),n={name:"update.md"},l=e("",20),t=[l];function p(d,h,r,c,o,u){return i(),a("div",null,t)}const g=s(n,[["render",p]]);export{b as __pageData,g as default};
