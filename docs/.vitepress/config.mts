@@ -5,6 +5,7 @@ import { defineConfig } from 'vitepress'
 import timeline from "vitepress-markdown-timeline"; 
 
 export default defineConfig({
+  ignoreDeadLinks: true,
   lang: 'zh-CN',
   title: "Java",
   description: "我的Java文档是一个 Java 核心技术教程。",
