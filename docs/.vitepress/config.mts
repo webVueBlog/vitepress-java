@@ -179,7 +179,6 @@ export default defineConfig({
     //侧边栏
     sidebar: [
       {
-        //分组标题1
         text: '介绍',
         collapsed: false,
         items: [
@@ -187,7 +186,6 @@ export default defineConfig({
         ],
       },
       {
-        //分组标题2
         text: 'Java 基础',
         collapsed: false,
         items: [
@@ -202,6 +200,34 @@ export default defineConfig({
           { text: '九、泛型', link: '/java/T' },
           { text: '十、注解', link: '/java/annotation' },
           { text: '十一、特性', link: '/java/Inference' }
+        ],
+      },
+      {
+        text: 'Java 容器',
+        collapsed: false,
+        items: [
+          { text: '一、概览', link: '/javaContainer/overview' },
+          { text: '二、容器中的设计模式', link: '/javaContainer/design' },
+          { text: '三、源码分析', link: '/javaContainer/codeAnalysis' }
+        ],
+      },
+      {
+        text: 'Java 并发',
+        collapsed: false,
+        items: [
+          { text: '一、使用线程', link: '/javaConcurrency/useThread' },
+          { text: '二、基础线程机制', link: '/javaConcurrency/basicThreading' },
+          { text: '三、中断', link: '/javaConcurrency/interrupt' },
+          { text: '四、互斥同步', link: '/javaConcurrency/exclusiveSynchronization' },
+          { text: '五、线程之间的协作', link: '/javaConcurrency/collaborationThreads' },
+          { text: '六、线程状态', link: '/javaConcurrency/threadState' },
+          { text: '七、J.U.C - AQS', link: '/javaConcurrency/juc-aqs' },
+          { text: '八、J.U.C - 其它组件', link: '/javaConcurrency/juc-other' },
+          { text: '九、线程不安全示例', link: '/javaConcurrency/exampleThread' },
+          { text: '十、Java 内存模型', link: '/javaConcurrency/memoryModel' },
+          { text: '十一、线程安全', link: '/javaConcurrency/threadSafety' },
+          { text: '十二、锁优化', link: '/javaConcurrency/lockOptimization' },
+          { text: '十三、多线程开发良好的实践', link: '/javaConcurrency/multiThreaded' }
         ],
       },
       // {
@@ -220,16 +246,13 @@ export default defineConfig({
       //     { text: '搭建导航', link: '/nav/' },
       //   ],
       // },
-      // {
-      //   //分组标题3
-      //   text: '其他站点',
-      //   collapsed: false,
-      //   items: [
-      //     { text: 'VuePress', link: 'https://vuepress.yiov.top/' },
-      //     { text: '劝学录教程', link: 'https://yiov.top/' },
-      //     { text: '个人主页', link: 'https://yingyayi.com/' },
-      //   ],
-      // },
+      {
+        text: '其他站点',
+        collapsed: false,
+        items: [
+          { text: '个人主页', link: 'https://1024bibi.com/' },
+        ],
+      },
     ],
 
     //本地搜索

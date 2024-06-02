@@ -144,7 +144,8 @@ vi /etc/profile
 ## jar启动
 
 ```angular2html
-nohup java -jar user-1.0.jar >/dev/null 2>&1 &
+nohup java -jar xxx-1.0.jar >/dev/null 2>&1 &
+nohup java  -jar xxx-9.1.1.jar  2>&1 &
 
 #!/bin/bash
 
