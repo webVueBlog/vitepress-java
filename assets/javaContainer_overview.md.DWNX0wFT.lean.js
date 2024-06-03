@@ -1,1 +1,0 @@
-import{_ as e,c as a,o as t}from"./chunks/framework.CbRyzB36.js";const d=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"javaContainer/overview.md","filePath":"javaContainer/overview.md"}'),r={name:"javaContainer/overview.md"};function o(n,i,s,c,v,p){return t(),a("div")}const m=e(r,[["render",o]]);export{d as __pageData,m as default};

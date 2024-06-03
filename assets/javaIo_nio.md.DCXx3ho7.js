@@ -1,0 +1,1 @@
+import{_ as a,c as e,o as t}from"./chunks/framework.CbRyzB36.js";const m=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"javaIo/nio.md","filePath":"javaIo/nio.md"}'),o={name:"javaIo/nio.md"};function n(r,s,c,i,p,_){return t(),e("div")}const f=a(o,[["render",n]]);export{m as __pageData,f as default};

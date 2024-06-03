@@ -1,0 +1,1 @@
+import{_ as e,c as t,o as a}from"./chunks/framework.CbRyzB36.js";const m=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"javaIo/objectOperation.md","filePath":"javaIo/objectOperation.md"}'),o={name:"javaIo/objectOperation.md"};function r(c,n,s,p,i,_){return a(),t("div")}const f=e(o,[["render",r]]);export{m as __pageData,f as default};
