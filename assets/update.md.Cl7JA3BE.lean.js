@@ -1,1 +1,0 @@
-import{_ as s,c as a,o as i,a8 as e}from"./chunks/framework.CbRyzB36.js";const b=JSON.parse('{"title":"更新及卸载","description":"","frontmatter":{},"headers":[],"relativePath":"update.md","filePath":"update.md"}'),n={name:"update.md"},t=e("",20),l=[t];function p(d,h,c,r,o,k){return i(),a("div",null,l)}const g=s(n,[["render",p]]);export{b as __pageData,g as default};
