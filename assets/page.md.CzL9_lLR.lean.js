@@ -1,0 +1,1 @@
+import{_ as s,c as i,o as a,a8 as n}from"./chunks/framework.DDO5B0CJ.js";const b=JSON.parse('{"title":"页面","description":"","frontmatter":{},"headers":[],"relativePath":"page.md","filePath":"page.md"}'),l={name:"page.md"},p=n("",128),e=[p];function h(t,k,r,E,d,g){return a(),i("div",null,e)}const u=s(l,[["render",h]]);export{b as __pageData,u as default};

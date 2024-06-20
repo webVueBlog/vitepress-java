@@ -1,0 +1,1 @@
+import{_ as p,c as a,o as t,a8 as e}from"./chunks/framework.DDO5B0CJ.js";const T=JSON.parse('{"title":"说一下Spring的事务传播行为","description":"","frontmatter":{},"headers":[],"relativePath":"Spring/3.md","filePath":"Spring/3.md"}'),r={name:"Spring/3.md"},n=e("",11),_=[n];function o(i,s,c,S,d,l){return t(),a("div",null,_)}const g=p(r,[["render",o]]);export{T as __pageData,g as default};

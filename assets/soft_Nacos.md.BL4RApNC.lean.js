@@ -1,0 +1,1 @@
+import{_ as a,c as s,o as n,a8 as e}from"./chunks/framework.DDO5B0CJ.js";const m=JSON.parse('{"title":"Nacos 安装配置","description":"","frontmatter":{},"headers":[],"relativePath":"soft/Nacos.md","filePath":"soft/Nacos.md"}'),p={name:"soft/Nacos.md"},l=e("",37),i=[l];function r(t,c,o,u,d,b){return n(),s("div",null,i)}const v=a(p,[["render",r]]);export{m as __pageData,v as default};

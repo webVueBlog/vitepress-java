@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Animation Example</title>
+    <style>
+        html,body{
+            font-family: -apple-system, "BlinkMacSystemFont", sans-serif;
+            margin: 0;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            background: aliceblue;
+            gap: 10px;
+            counter-reset: num;
+        }
+        .item{
+
+            position: absolute;
+            display: grid;
+            place-content: center;
+            width: 100px;
+            height: 100px;
+            border-radius: 8px;
+            background-color: #3E65FF;
+            color: #fff;
+            font-size: 30px;
+            counter-increment: num;
+            filter: hue-rotate(calc(var(--i) * 20deg));
+            animation: slide 12s calc(-2s * var(--i)) infinite;
+        }
+        .item::before{
+            content: counter(num);
+        }
+        @keyframes slide {
+            0%,90%,100% {
+                z-index: 4;
+                transform: translate(0%, 0%) scale(1);
+            }
+            6.67%,
+            16.67% {
+                z-index: 3;
+                transform: translate(120%, -30%) scale(0.9);
+            }
+            23.33%,
+            33.33% {
+                z-index: 2;
+                transform: translate(100%, -70%) scale(0.8);
+            }
+            40%,
+            50% {
+                z-index: 1;
+                transform: translate(0, -90%) scale(0.7);
+            }
+            56.67%,
+            66.67% {
+                z-index: 2;
+                transform: translate(-100%, -70%) scale(0.8);
+            }
+            73.33%,
+            83.33% {
+                z-index: 3;
+                transform: translate(-120%, -30%) scale(0.9);
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="item" style="--i: 0"></div>
+<div class="item" style="--i: 1"></div>
+<div class="item" style="--i: 2"></div>
+<div class="item" style="--i: 3"></div>
+<div class="item" style="--i: 4"></div>
+<div class="item" style="--i: 5"></div>
+</body>
+</html>

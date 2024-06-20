@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Animation Example</title>
+    <style>
+        html,body{
+            font-family: -apple-system, "BlinkMacSystemFont", sans-serif;
+            margin: 0;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            background: aliceblue;
+            gap: 10px;
+            counter-reset: num;
+        }
+        .item{
+            position: absolute;
+            display: grid;
+            place-content: center;
+            width: 100px;
+            height: 100px;
+            border-radius: 8px;
+            background-color: #3E65FF;
+            color: #fff;
+            font-size: 30px;
+            counter-increment: num;
+            transform: translate(var(--translate)) scale(var(--scale));
+            transition: .5s transform;
+            z-index: var(--z);
+        }
+        .item-wrap{
+            display: contents;
+            animation: slide 8s calc(-2s * var(--i)) steps(1) infinite;
+        }
+        .item::before{
+            content: counter(num);
+        }
+        @keyframes slide {
+            0%,100% {
+                --translate: 0,0;
+                --scale: 1;
+                --z: 4;
+            }
+            25% {
+                --translate: 120%,-30%;
+                --scale: 0.75;
+                --z: 3;
+            }
+            50% {
+                --translate: -5%,-110%;
+                --scale: 0.6;
+                --z: 2;
+            }
+            75% {
+                --translate: -120%,-30%;
+                --scale: 0.75;
+                --z: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="item-wrap" style="--i: 0">
+    <div class="item"></div>
+</div>
+<div class="item-wrap" style="--i: 1">
+    <div class="item"></div>
+</div>
+<div class="item-wrap" style="--i: 2">
+    <div class="item"></div>
+</div>
+<div class="item-wrap" style="--i: 3">
+    <div class="item"></div>
+</div>
+</body>
+</html>

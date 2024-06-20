@@ -1,1 +1,0 @@
-import{_ as n,c as s,o as a,a8 as p}from"./chunks/framework.CbRyzB36.js";const v=JSON.parse('{"title":"Maven 安装","description":"","frontmatter":{},"headers":[],"relativePath":"soft/Maven.md","filePath":"soft/Maven.md"}'),e={name:"soft/Maven.md"},l=p("",16),i=[l];function r(t,c,b,u,o,m){return a(),s("div",null,i)}const d=n(e,[["render",r]]);export{v as __pageData,d as default};

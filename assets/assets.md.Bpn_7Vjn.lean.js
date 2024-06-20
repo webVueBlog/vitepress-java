@@ -1,1 +1,0 @@
-import{_ as s,c as a,o as i,a8 as n}from"./chunks/framework.CbRyzB36.js";const b=JSON.parse('{"title":"静态部署","description":"","frontmatter":{},"headers":[],"relativePath":"assets.md","filePath":"assets.md"}'),e={name:"assets.md"},l=n("",26),p=[l];function t(h,r,k,d,c,g){return i(),a("div",null,p)}const o=s(e,[["render",t]]);export{b as __pageData,o as default};
