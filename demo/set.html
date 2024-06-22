@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>高德地图 - 点聚合</title>
+    <link rel="shortcut icon" href="#" />
+    <link rel="stylesheet" href="https://cache.amap.com/lbs/static/main1119.css"/>
+    <style>
+        #container {
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+<div id="container"></div>
+</body>
+<script type="text/javascript" src="https://webapi.amap.com/maps?v=1.4.6&key=fb5dce704318a76bbbdc4dfbff58cc83&plugin=AMap.MarkerClusterer"></script>
+<script type="text/javascript">
+ 
+    var map = new AMap.Map('container', {
+        resizeEnable: true, 
+        zoom: 9,
+        // center: [121.481041,31.683859],  //崇明东平森林公园经纬度
+        center: [121.635058,31.576855]  //崇明岛经纬度
+    });
+    // map.setMapStyle('amap://styles/darkblue');    //  标准 darkblue
+ 
+    // 停车场分布
+    var preIcon, clickIcon, cluster, markers = [], lnglats = [
+        [121.382593, 31.101118],
+        [121.473926, 31.209905],
+        [121.397026, 31.304256],
+        [121.413694, 31.240548],
+        [121.707697, 31.164827],
+        [121.380356, 31.213341],
+        [121.544808, 31.282369],
+        [121.420803, 31.240239],
+        [121.449554, 31.290218],
+        [121.386125, 31.269562],
+        [121.395354, 31.6193],
+        [121.471935, 31.390852],
+        [121.508709, 31.346722],
+        [121.332567, 30.711519],
+        [121.373386, 31.165166],
+    ];
+    preIcon = new AMap.Icon({
+        image: "img/cz/parking_unchecked.png",
+        size: new AMap.Size(30, 37), //图标大小
+        imageSize: new AMap.Size(30, 37)
+    });
+    clickIcon = new AMap.Icon({
+        image: "img/cz/parking_checked.png",
+        size: new AMap.Size(30, 37), //图标大小
+        imageSize: new AMap.Size(30, 37)
+    });
+ 
+    for (var i = 0; i < lnglats.length; i++) {
+        var marker = new AMap.Marker({
+            map: map,
+            position: lnglats[i],
+            icon: preIcon,
+            offset: new AMap.Pixel(-0, -37)
+        })
+ 
+        map.setFitView()
+ 
+        // marker逐一push到markers
+        markers.push(marker)
+ 
+        marker.on('click', resetMap);
+        // marker.emit('click', {target: marker});
+    }
+ 
+    // 聚合函数
+    addCluster(1);
+ 
+    function addCluster(tag) {
+       if (cluster) {
+           cluster.setMap(null);
+       }
+       if (tag == 1) {//自定义图标
+           var sts = [{
+               url: "https://a.amap.com/jsapi_demos/static/images/blue.png", //聚合量在1-10
+               size: new AMap.Size(32, 32),
+               offset: new AMap.Pixel(-16, -16)
+           }, {
+               url: "https://a.amap.com/jsapi_demos/static/images/green.png", //聚合量在11-100
+               size: new AMap.Size(32, 32),
+               offset: new AMap.Pixel(-16, -16)
+           }, {
+               url: "https://a.amap.com/jsapi_demos/static/images/orange.png", //聚合量在101-1000
+               size: new AMap.Size(36, 36),
+               offset: new AMap.Pixel(-18, -18)
+           }, {
+               url: "https://a.amap.com/jsapi_demos/static/images/red.png", //聚合量在1001-10000
+               size: new AMap.Size(48, 48),
+               offset: new AMap.Pixel(-24, -24)
+           }, {
+               url: "https://a.amap.com/jsapi_demos/static/images/darkRed.png", //聚合量在10001-100000
+               size: new AMap.Size(48, 48),
+               offset: new AMap.Pixel(-24, -24)
+           }];
+           cluster = new AMap.MarkerClusterer(map, markers, {
+               styles: sts,
+               gridSize: 80
+           });
+       } else {//默认样式
+           cluster = new AMap.MarkerClusterer(map, markers, {gridSize: 80});
+       }
+    }
+ 
+    //鼠标点击事件,设置地图中心点及放大显示级别
+    function resetMap(e) {
+        map.setCenter(e.target.getPosition());
+        // map.setZoomAndCenter(11, e.target.getPosition());
+        
+        for (var i = 0; i < markers.length; i++) {
+            markers[i].setIcon(preIcon);
+        }
+ 
+        e.target.setIcon(clickIcon);
+ 
+    }
+</script>
+</html>
