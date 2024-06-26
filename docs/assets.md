@@ -1,7 +1,5 @@
 # 静态部署
 
-> 更新时间：2024-1-28
-
 主要讲一下GitHub，其他的方式都大同小异，[更多部署方式可以参考官方文档](https://vitepress.dev/zh/guide/deploy)
 
 

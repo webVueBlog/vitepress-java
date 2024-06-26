@@ -1,7 +1,5 @@
 # 其他博客框架
 
-> 更新时间：2021-06-28
-
 ## 简介
 
 [VitePress](https://vitepress.dev/zh/) 使用 Markdown 编写的源内容，生成可以轻松部署在任何地方的静态 HTML 页面

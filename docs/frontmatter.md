@@ -1,7 +1,5 @@
 # Frontmatter
 
-> 更新时间：2024-1-28
-
 Java已经给了一个配置，就在我们的 `docs - index.md` 中
 
 ::: details 官方配置示例

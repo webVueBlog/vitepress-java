@@ -1,8 +1,5 @@
 # 组件
 
-> 更新时间：2023-12-18
-
-
 ## 简介
 
 常说的 SFC 组件，即 `Single file component` ，也就是我们的vue组件
