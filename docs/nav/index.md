@@ -1,7 +1,5 @@
 # VitePress搭建个人导航
 
-> 更新时间：2023-12-30
-
 ### 自定义布局
 
 在 `docs/.vitepress/theme` 目录下的`index.ts` 文件中加入如下代码
