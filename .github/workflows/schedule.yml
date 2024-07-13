@@ -1,41 +1,27 @@
-name: Deploy to GitHub Pages
+name: Deploy
 
 on:
   push:
     branches:
-      - master # 当推送到 master 分支时触发
+      - master
 
 jobs:
-  build:
+  deploy:
     runs-on: ubuntu-latest
-
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v2
-
-      - name: Set up Node.js
-        uses: actions/setup-node@v2
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v3
         with:
-          node-version: '14'
+          node-version: 16
+      - run: npm i pnpm -g
+      - run: pnpm install --frozen-lockfile
 
-      - name: Configure npm registry
-        run: npm config set registry https://registry.npmmirror.com
+      - name: Build
+        run: pnpm docs:build
 
-      - name: Install dependencies
-        run: npm install
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: docs/.vitepress/dist
 
-      - name: Build static files
-        run: yarn docs:build
-
-      - name: Deploy to GitHub Pages
-        run: |
-          cd docs/.vitepress/dist
-          git init
-          git checkout -b dist
-          git add -A
-          git commit -m 'deploy'
-          git remote add origin https://${{ secrets.GITHUB_ACTOR }}:${{ secrets.ACCESS_TOKEN }}@github.com/${{ github.repository }}.git
-          git push -f origin dist:gh-pages
-        env:
-          ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
-          GITHUB_ACTOR: ${{ github.actor }}
