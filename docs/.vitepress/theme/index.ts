@@ -1,6 +1,8 @@
 import DefaultTheme from 'vitepress/theme'
-import './style/index.css' 
-
+import './style/index.css'
+import { inBrowser } from 'vitepress'
+// @ts-ignore
+import busuanzi from 'busuanzi.pure.js'
 // @ts-ignore
 import Video from './components/Video.vue'
 // @ts-ignore
@@ -22,8 +24,13 @@ import giscusTalk from 'vitepress-plugin-comment-with-giscus';
 
 export default {
   extends: DefaultTheme,
-
-  enhanceApp({app}) {
+  // @ts-ignore
+  enhanceApp({app, router}) {
+    if (inBrowser) {
+      router.onAfterRouteChanged = () => {
+        busuanzi.fetch()
+      }
+    }
     // 注册全局组件
     app.component('Video' , Video)
     app.component('MNavLinks' , MNavLinks)
@@ -64,9 +71,9 @@ export default {
     // giscus配置
     giscusTalk({
       repo: 'webVueBlog/vitepress-java', //仓库
-      repoId: 'R_kgDOL_Xo1w', //仓库ID
+      repoId: 'R_kgDOMDixzA', //仓库ID
       category: 'Announcements', // 讨论分类
-      categoryId: 'DIC_kwDOL_Xo184CfnjL', //讨论分类ID
+      categoryId: 'DIC_kwDOMDixzM4Cf1Ud', //讨论分类ID
       mapping: 'pathname',
       inputPosition: 'bottom',
       lang: 'zh-CN',
