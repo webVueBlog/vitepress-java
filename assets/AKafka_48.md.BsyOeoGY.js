@@ -1,0 +1,15 @@
+import{_ as s,c as a,o as n,a8 as p}from"./chunks/framework.DDO5B0CJ.js";const e="/vitepress-java/assets/img_183.BIwxD3Cw.png",i="/vitepress-java/assets/img_184.Ca4KEgcZ.png",r="/vitepress-java/assets/img_185.CB-jZMgC.png",l="/vitepress-java/assets/img_186.DqqHvDiQ.png",t="/vitepress-java/assets/img_187.B9WiTe1O.png",c="/vitepress-java/assets/img_188.FgIKruvP.png",z=JSON.parse('{"title":"10.1-Springboot项目整合spring-kafka依赖发送消息","description":"","frontmatter":{},"headers":[],"relativePath":"AKafka/48.md","filePath":"AKafka/48.md"}'),o={name:"AKafka/48.md"},g=p('<h1 id="_10-1-springboot项目整合spring-kafka依赖发送消息" tabindex="-1">10.1-Springboot项目整合spring-kafka依赖发送消息 <a class="header-anchor" href="#_10-1-springboot项目整合spring-kafka依赖发送消息" aria-label="Permalink to &quot;10.1-Springboot项目整合spring-kafka依赖发送消息&quot;">​</a></h1><p><img src="'+e+'" alt="img_183.png" loading="lazy"></p><p><img src="'+i+`" alt="img_184.png" loading="lazy"></p><div class="language- vp-adaptive-theme line-numbers-mode"><button title="Copy Code" class="copy"></button><span class="lang"></span><pre class="shiki shiki-themes github-light github-dark vp-code"><code><span class="line"><span>spring:</span></span>
+<span class="line"><span> kafka:</span></span>
+<span class="line"><span>  bootstrap-servers: 112.74.55.160:9092,112.74.55.160:9093,112.74.55.160:9094</span></span>
+<span class="line"><span>  producer:</span></span>
+<span class="line"><span>   # 消息重发的次数</span></span>
+<span class="line"><span>   retries: 0</span></span>
+<span class="line"><span>   # 一个批次可以使用的内存大小</span></span>
+<span class="line"><span>   batch-size: 16384</span></span>
+<span class="line"><span>   # 设置生产者内存缓冲区的大小</span></span>
+<span class="line"><span>   buffer-memory: 33554432</span></span>
+<span class="line"><span>   # 键的序列化方式</span></span>
+<span class="line"><span>   key-serializer: org.apache.kafka.common.serialization.StringSerializer</span></span>
+<span class="line"><span>   # 值的序列化方式</span></span>
+<span class="line"><span>   value-serializer: org.apache.kafka.common.serialization.StringSerializer</span></span>
+<span class="line"><span>   acks: all</span></span></code></pre><div class="line-numbers-wrapper" aria-hidden="true"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br></div></div><p><img src="`+r+'" alt="img_185.png" loading="lazy"></p><p><img src="'+l+'" alt="img_186.png" loading="lazy"></p><p><img src="'+t+'" alt="img_187.png" loading="lazy"></p><p><img src="'+c+'" alt="img_188.png" loading="lazy"></p>',8),m=[g];function _(b,d,u,k,v,f){return n(),a("div",null,m)}const S=s(o,[["render",_]]);export{z as __pageData,S as default};

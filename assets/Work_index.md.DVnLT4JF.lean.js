@@ -1,0 +1,1 @@
+import{_ as e,c as a,o as t,a8 as r}from"./chunks/framework.DDO5B0CJ.js";const f=JSON.parse('{"title":"实践记录","description":"","frontmatter":{},"headers":[],"relativePath":"Work/index.md","filePath":"Work/index.md"}'),o={name:"Work/index.md"},i=r("",2),s=[i];function _(n,l,c,d,h,p){return t(),a("div",null,s)}const k=e(o,[["render",_]]);export{f as __pageData,k as default};
