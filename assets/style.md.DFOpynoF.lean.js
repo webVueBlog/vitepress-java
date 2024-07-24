@@ -1,0 +1,1 @@
+import{_ as s,c as i,o as a,a8 as n}from"./chunks/framework.DU-60nm_.js";const F=JSON.parse('{"title":"样式美化","description":"","frontmatter":{},"headers":[],"relativePath":"style.md","filePath":"style.md"}'),l={name:"style.md"},p=n("",186),h=[p];function k(t,e,r,E,d,g){return a(),i("div",null,h)}const o=s(l,[["render",k]]);export{F as __pageData,o as default};

@@ -1,1 +1,0 @@
-import{_ as s,c as a,o as n,a8 as e}from"./chunks/framework.DDO5B0CJ.js";const m=JSON.parse('{"title":"nginx安装部署文档","description":"","frontmatter":{},"headers":[],"relativePath":"soft/nginx.md","filePath":"soft/nginx.md"}'),p={name:"soft/nginx.md"},l=e("",57),i=[l];function t(r,o,c,d,u,h){return n(),a("div",null,i)}const g=s(p,[["render",t]]);export{m as __pageData,g as default};

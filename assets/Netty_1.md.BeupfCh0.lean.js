@@ -1,1 +1,0 @@
-import{_ as t,c as e,o as a,a8 as p}from"./chunks/framework.DDO5B0CJ.js";const P=JSON.parse('{"title":"什么是Netty？它的主要特点是什么？","description":"","frontmatter":{},"headers":[],"relativePath":"Netty/1.md","filePath":"Netty/1.md"}'),o={name:"Netty/1.md"},_=p("",10),r=[_];function c(n,s,N,y,i,d){return a(),e("div",null,r)}const T=t(o,[["render",c]]);export{P as __pageData,T as default};

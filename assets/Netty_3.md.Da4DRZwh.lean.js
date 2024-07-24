@@ -1,1 +1,0 @@
-import{_ as n,c as e,o as a,a8 as t}from"./chunks/framework.DDO5B0CJ.js";const H=JSON.parse('{"title":"什么是ChannelHandler？","description":"","frontmatter":{},"headers":[],"relativePath":"Netty/3.md","filePath":"Netty/3.md"}'),l={name:"Netty/3.md"},r=t("",5),o=[r];function s(d,h,i,_,c,p){return a(),e("div",null,o)}const g=n(l,[["render",s]]);export{H as __pageData,g as default};

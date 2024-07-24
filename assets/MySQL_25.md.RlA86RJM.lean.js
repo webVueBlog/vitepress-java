@@ -1,1 +1,0 @@
-import{_ as e,c as a,o as t,a8 as s}from"./chunks/framework.DDO5B0CJ.js";const m=JSON.parse('{"title":"第 25 章 使用触发器","description":"","frontmatter":{},"headers":[],"relativePath":"MySQL/25.md","filePath":"MySQL/25.md"}'),r={name:"MySQL/25.md"},n=s("",3),o=[n];function i(c,d,l,p,_,h){return t(),a("div",null,o)}const f=e(r,[["render",i]]);export{m as __pageData,f as default};

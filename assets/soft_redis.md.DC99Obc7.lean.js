@@ -1,1 +1,0 @@
-import{_ as s,c as a,o as n,a8 as e}from"./chunks/framework.DDO5B0CJ.js";const m=JSON.parse('{"title":"redis安装部署文档","description":"","frontmatter":{},"headers":[],"relativePath":"soft/redis.md","filePath":"soft/redis.md"}'),p={name:"soft/redis.md"},l=e("",51),i=[l];function r(c,t,d,o,b,u){return n(),a("div",null,i)}const v=s(p,[["render",r]]);export{m as __pageData,v as default};

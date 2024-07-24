@@ -1,1 +1,0 @@
-import{_ as s,c as a,o as n,a8 as i}from"./chunks/framework.DDO5B0CJ.js";const o=JSON.parse('{"title":"配置","description":"","frontmatter":{},"headers":[],"relativePath":"configuration.md","filePath":"configuration.md"}'),e={name:"configuration.md"},p=i("",25),l=[p];function t(r,h,d,k,c,E){return n(),a("div",null,l)}const m=s(e,[["render",t]]);export{o as __pageData,m as default};
