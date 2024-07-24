@@ -1,0 +1,1 @@
+import{_ as s,c as a,o as i,a7 as n}from"./chunks/framework.B4f44bWA.js";const b=JSON.parse('{"title":"静态部署","description":"","frontmatter":{},"headers":[],"relativePath":"assets.md","filePath":"assets.md"}'),e={name:"assets.md"},l=n("",25),p=[l];function t(h,r,k,d,c,E){return i(),a("div",null,p)}const u=s(e,[["render",t]]);export{b as __pageData,u as default};

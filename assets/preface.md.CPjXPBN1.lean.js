@@ -1,1 +1,0 @@
-import{_ as e,c as r,o as t,a8 as a}from"./chunks/framework.DU-60nm_.js";const d=JSON.parse('{"title":"其他博客框架","description":"","frontmatter":{},"headers":[],"relativePath":"preface.md","filePath":"preface.md"}'),s={name:"preface.md"},o=a("",9),l=[o];function n(h,f,i,p,c,_){return t(),r("div",null,l)}const u=e(s,[["render",n]]);export{d as __pageData,u as default};
